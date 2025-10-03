@@ -3,6 +3,10 @@ body{
     align-content: center;
     height: 100vh;
 }
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
 input[type="text"] {
     width: 300px;
     padding: 10px;
@@ -38,13 +42,35 @@ button[id="filter"] {
 button[id="delete-all"] {
     background-color: #dc3545;
 }
-p[id="footer-text"] {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+li[id="todo-item"] {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1px;
+    margin-bottom: 2px;
 }
-header {
-    text-align: center;
-    margin-bottom: 20px;
+p[id="task-list"] {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 5px;
+}
+p[id="task-date"] {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 5px;
+    color: #555;
+}
+button[id="delete-task"] {
+    background-color: #dc3545;
+    margin: 5px;
+}
+
+p[id="no-lists"] {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #888888;
 }
 footer {
     position: fixed;

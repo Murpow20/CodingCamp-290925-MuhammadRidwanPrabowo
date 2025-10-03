@@ -21,9 +21,9 @@
         <!-- form table -->
         <section class="todo-container">
             <form id="todo-form">
-                <input type="date" id="date-input" required>
-                <input type="text" id="todo-input" placeholder="Enter a new task" required>
-                <button type="submit" onclick="addTodo()">Add Task</button>
+                <input type="date" id="date-input" placeholder="Select a date"> 
+                <input type="text" id="todo-input" placeholder="Enter a new task">
+                <button type="submit" onclick="addTodo(event)">Add Task</button>
             </form>               
         </section>
         
@@ -37,7 +37,9 @@
         <section class="todo-list">
             <ul id="todo-list">
                 <!-- List items will be added here dynamically -->
-                 <p id="footer-text">No tasks added yet.</p>
+                
+                <p id="no-lists">No tasks added yet.</p>
+                
             </ul>
         </section>
     </main>
