@@ -21,20 +21,32 @@
         <!-- form table -->
         <section class="todo-container">
             <form id="todo-form">
-                <input type="text" id="todo-input" placeholder="Enter a new task" required>
                 <input type="date" id="date-input" required>
-                <button type="submit">Add Task</button>
+                <input type="text" id="todo-input" placeholder="Enter a new task" required>
+                <button type="submit" onclick="addTodo()">Add Task</button>
             </form>               
         </section>
-
-        <section></section>
+        
+        <!-- action buttons -->
+        <section class="action-buttons">
+            <button id="filter">Filter</button>
+            <button id="delete-all">Delete all</button>
+        </section>
+        
+        <!-- list todo -->
+        <section class="todo-list">
+            <ul id="todo-list">
+                <!-- List items will be added here dynamically -->
+                 <p id="footer-text">No tasks added yet.</p>
+            </ul>
+        </section>
     </main>
 
     <!-- footer -->
     <footer>
-        <p>&copy; 2025 by Muhammad Ridwan Prabowo</p>
+        <p>&copy; 2025 | Muhammad Ridwan Prabowo</p>
     </footer>
-
+    
     <!-- JavaScript -->
     <script src="JavaScript/todoScript.js"></script>
 </body>
