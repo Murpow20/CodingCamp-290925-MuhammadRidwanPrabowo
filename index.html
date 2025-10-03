@@ -29,8 +29,23 @@
         
         <!-- action buttons -->
         <section class="action-buttons">
-            <button id="filter">Filter</button>
-            <button id="delete-all">Delete all</button>
+                <select id="month-filter">
+                    <option value="">All Month</option>
+                    <option value="01">January</option>
+                    <option value="02">February</option>
+                    <option value="03">March</option>
+                    <option value="04">April</option>
+                    <option value="05">May</option>
+                    <option value="06">June</option>
+                    <option value="07">July</option>
+                    <option value="08">August</option>
+                    <option value="09">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+            <button id="filter" onclick="filterOnClick()">Filter</button>
+            <button id="delete-all" onclick="deleteAllTodo()">Delete all</button>
         </section>
         
         <!-- list todo -->
